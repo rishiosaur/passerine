@@ -34,6 +34,8 @@ pub enum Opcode {
     UnLabel = 13,
     /// Destructures atomic data by asserting it matches exactly
     UnData = 14,
+    /// CallExtern from Rust for FFI
+    CallFFI = 15
 }
 
 impl Opcode {
