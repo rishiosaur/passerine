@@ -163,6 +163,9 @@ impl fmt::Display for Lambda {
                 Opcode::UnLabel => { writeln!(f, "UnLabel  \t\t--")?; },
                 Opcode::UnData  => { writeln!(f, "UnData   \t\t--")?; },
                 Opcode::Copy    => { writeln!(f, "Copy     \t\t--")?; },
+                Opcode::CallFFI => { 
+                    writeln!(f, "CallFFI: {}, ")
+                }
             }
         }
 
